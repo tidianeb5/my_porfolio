@@ -30,3 +30,21 @@ $background-opacity: 0.9;
 @mixin easeOut {
     transition: all 1.5s ease-out;
 }
+
+//Media query Mixins
+@mixin mediaSm {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+// Media Md
+@mixin medialg {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+        @content;
+    }
+}
+@mixin mediaXL {
+    @media screen and (min-width: 1171px) {
+        @content;
+    }
+}
