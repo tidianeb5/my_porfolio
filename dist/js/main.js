@@ -4,7 +4,7 @@ const menu = document.querySelector('.menu')
 const menuNav = document.querySelector('.menu-nav')
 const menuBranding = document.querySelector('.menu-branding')
 
-const naveItems = document.querySelectorAll('.nave-item')
+const navItems = document.querySelectorAll('.nav-item')
 
 //set Initial State of Menu
 
@@ -20,7 +20,7 @@ function toggleMenu() {
         menuNav.classList.add('show')
         menuBranding.classList.add('show')
 
-        naveItems.forEach(item => item.classList.add('show'))
+        navItems.forEach(item => item.classList.add('show'))
 
         //set Menu State
         showMenu = true
@@ -30,7 +30,7 @@ function toggleMenu() {
         menuNav.classList.remove('show')
         menuBranding.classList.remove('show')
 
-        naveItems.forEach(item => item.classList.remove('show'))
+        navItems.forEach(item => item.classList.remove('show'))
 
         //set Menu State
         showMenu = false
